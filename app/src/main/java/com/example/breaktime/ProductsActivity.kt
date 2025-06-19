@@ -81,6 +81,7 @@ class ProductsActivity : AppCompatActivity() {
                 else -> false
             }
         }
+
     }
 
     private fun loadCartAndProducts() {

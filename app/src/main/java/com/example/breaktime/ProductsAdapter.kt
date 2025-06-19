@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class ProductsAdapter(
     private val products: List<Product>,
@@ -36,8 +37,16 @@ class ProductsAdapter(
         holder.productName.text = product.name
         holder.productPrice.text = "${product.price} ₽"
         
-        // Здесь можно добавить загрузку изображения через Glide или Picasso
-        // holder.productImage.setImageResource(R.drawable.korzhik)
+        // Загрузка изображения по URL через Glide
+        if (product.imageUrl.isNotEmpty()) {
+            Glide.with(holder.productImage.context)
+                .load(product.imageUrl)
+                .placeholder(R.drawable.korzhik)
+                .error(R.drawable.korzhik)
+                .into(holder.productImage)
+        } else {
+            holder.productImage.setImageResource(R.drawable.korzhik)
+        }
         
         val context = holder.addToCartButton.context
         val inCart = cartProductIds.contains(product.id)
