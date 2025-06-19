@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="BreakTime.app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-06-19T13:01:23.023773500Z">
+        <DropdownSelection timestamp="2025-06-19T15:51:14.761792Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=pblfkvcuvk7tonxo" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\user\.android\avd\Project.avd" />
             </handle>
           </Target>
         </DropdownSelection>

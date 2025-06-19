@@ -86,16 +86,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_reg" />
 
-    <Button
-        android:id="@+id/chat_btn"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_margin="24dp"
-        android:backgroundTint="@color/black"
-        android:background="@drawable/round_button_bg"
-        android:drawableTop="@drawable/ic_chat"
-        android:contentDescription="Чат"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

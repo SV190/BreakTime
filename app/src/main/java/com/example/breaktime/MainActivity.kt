@@ -25,8 +25,6 @@ class MainActivity : AppCompatActivity() {
         // кнопки
         val regBtn = findViewById<Button>(R.id.reg_btn)
         val loginBtn = findViewById<Button>(R.id.login_btn)
-        val chatBtn = findViewById<Button>(R.id.chat_btn)
-        android.util.Log.d("MainActivity", "chatBtn = $chatBtn")
 
         // Обработка кнопки регистрации
         regBtn.setOnClickListener {
@@ -36,13 +34,6 @@ class MainActivity : AppCompatActivity() {
         // Обработка кнопки входа
         loginBtn.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
-        }
-
-        // Обработка кнопки чата
-        chatBtn.setOnClickListener {
-            android.util.Log.d("MainActivity", "Chat button clicked")
-            android.widget.Toast.makeText(this, "Chat button clicked", android.widget.Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, ChatActivity::class.java))
         }
     }
 
